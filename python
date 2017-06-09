@@ -1,0 +1,15 @@
+#python 基础
+0 说明
+    作者：woniuray
+    创建时间：2017-06-09
+    更新时间：2017-06-09
+    QQ群交流分享：309683253
+1 安装
+  1.1 windows安装
+  1.2 Linux安装
+2 基础
+  2.1 Hello World
+    #!/usr/bin/env python
+    print "Hello World!"
+  2.2
+
