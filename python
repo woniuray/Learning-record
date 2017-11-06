@@ -2,14 +2,35 @@
 0 说明
     作者：woniuray
     创建时间：2017-06-09
-    更新时间：2017-06-09
+    更新时间：2017-11-06
     QQ群交流分享：309683253
 1 安装
   1.1 windows安装
+    默认安装就好
   1.2 Linux安装
 2 基础
   2.1 Hello World
     #!/usr/bin/env python
+    # _*_ coding:UTF-8 _*_
     print "Hello World!"
-  2.2
-
+  2.2 标识符
+    标识符区分大小写可以包括英文、数字以及下划线（_），但不能以数字开头。
+    以下划线开头的标识符是有特殊意义的。以单下划线开头（_foo）的代表不能直接访问的类属性，需通过类提供的接口进行访问，不能用"from xxx import *"而导入；
+    以双下划线开头的（__foo）代表类的私有成员；以双下划线开头和结尾的（__foo__）代表python里特殊方法专用的标识，如__init__（）代表类的构造函数。
+  2.3 关键字
+    import keyword
+    keyword.iskeyword(str)          #验证是否是关键字
+    keyword.kwlist                  #列出所有关键字
+    ['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 
+    'finally', 'for', 'from','global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 
+    'raise', 'return', 'try', 'while', 'with', 'yield']
+  2.4 注释
+    单行注释   #
+    多行注释   ''' 多行注释 '''
+  2.5 变量
+    a = 1           #整形
+    b = 1.0         #浮点行
+    c = 'Hello'     #字符型
+    a = b = c = 1   #多个变量赋值
+    a ,b ,c = 1, 1.0, 'Hello'
+    
